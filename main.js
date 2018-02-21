@@ -1,5 +1,8 @@
 // Jquery
 
-$("#myFunction").click(function(){
-    $("h").text("This is Paul Walker now");
-});
+$(function() {
+    $("myFunction").click(function(){
+        $("#heading").html("This is Paul Walker now");
+    });
+})
+

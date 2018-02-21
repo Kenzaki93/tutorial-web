@@ -11,7 +11,13 @@
 </head>
 <body>
     <h1 id="heading">This is John Doe</h1>
-    <button onclick="myFunction()" type="submit">Click to Change Name</button>
-    <script src="main.js"></script>
+    <button id="btn1" type="submit">Click to Change Name</button>
+    <script>
+        $(function() {
+            $("#btn1").click(function(){
+                $("#heading").html("This is Paul Walker now");
+            });
+        })
+    </script>
 </body>
 </html>
